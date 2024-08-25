@@ -1,0 +1,13 @@
+version: "3"
+services:
+  backend:
+    image: your_dockerhub_username/courses-api-backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Add any necessary environment variables here
+
+  frontend:
+    image: your_dockerhub_username/courses-frontend
+    ports:
+      - "3000:80" # Change if your frontend serves on a different port
